@@ -1,0 +1,11 @@
+So this is an important document here. Please read it with care.
+
+So basically there is an everlasting confusion between anyone starting with programming and learning about functions about what is the difference between a Parameter and an Argument.
+
+A parameter is a variable which is listed in the brackets of the function header (the place where function is defined)
+
+Then what is an Argument?
+
+Basically, an argument is the actual value which can be a constant, variable or reference which is used when calling a function.
+
+So when you are talking about a function, always use the word 'parameter' UNLESS you are talking of the value to be entered in the function.
