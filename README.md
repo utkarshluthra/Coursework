@@ -1,3 +1,5 @@
-# CS-Classes
+# Order of Documents
 
-This is the folder for all the important documents for the CS Python course conducted by me in the year 2020-21
+1. Functions.py
+2. Parameter vs Argument.py
+3. __main__.txt
