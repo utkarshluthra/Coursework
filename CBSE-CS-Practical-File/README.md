@@ -24,3 +24,5 @@
 19. Write a python program to display records from MySQL table. 
 20. Write a python program to update records in MySQL table. 
 21. Write a python program to delete records from MySQL table. 
+
+** This repository has been created for reference and educational purposes only.
