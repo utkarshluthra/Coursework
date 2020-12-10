@@ -1,0 +1,9 @@
+Recursion 1 - Summation of n numbers
+Recursion 2 - Power of n to the p
+Recursion 3 - Factorial of a number n 
+Recursion 4 - Fibonacci without DP
+Recursion 5 - To check if the array is sorted or not
+Recursion 6 - To print numbers in increasing order from 0 to n
+Recursion 7 - To print numbers in decreasing order from n to 0
+Recursion 8 - To find the first and last occurance of a number in an array
+Recursion 9 - To reverse a string using recursion.
