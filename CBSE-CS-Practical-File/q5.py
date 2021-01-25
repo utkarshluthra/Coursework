@@ -1,3 +1,4 @@
+#Write a program to count the number of lines in a text file which is starting with the alphabets "A" or "a"
 with open("q5.txt", "r") as fh:
     s=fh.readlines()
     linecount=len(s)
