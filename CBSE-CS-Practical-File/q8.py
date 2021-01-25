@@ -1,3 +1,4 @@
+#Write a program to read a text file and display the count of vowels and consonants in the file.
 count_vowel=0
 count_waste=0
 count=0
