@@ -1,3 +1,4 @@
+#Write a program that copies a text file "source.txt" onto "target.txt" barring the lines starting with a "@" sign
 with open('source.txt', 'r') as fh:
     s=fh.readlines()
     linecount=len(s)
