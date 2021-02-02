@@ -3,10 +3,10 @@
 
 ---
 
-**Subject:** Computer Science
-**Language:** Python
-**Name of project:** English to Spanish Flashcards
-**AIM:** To create a project to help English speaking people in learning basic spanish words with dictionary, search and testing. Also, to display the scorecard of the previous tests taken from the database.
+**Subject:** Computer Science <br>
+**Language:** Python <br>
+**Name of project:** Single Deck Flashcard Program
+**AIM:** To create a program simulating the flashcard experience for better memorization and reference purpose capable of testing, searching and creating flashcards with complete connectivity to MySQL Database and including File Handling.
 
 ### Objectives
 To create an application in Python3 Programming Language which uses the following:
@@ -64,7 +64,8 @@ The database used here is MySQL and is connected to the program using the mysql-
 ### Further Scope
 * Using object-oriented programming we can use each deck as a separate deck of flashcards which can be used for multiple purposes.
 * Search can be made keyword based and throughout the databases.
-* The UI and UX can be improved
+* The UI and UX can be improved.
+* Importing and Exporting features of Flashcards via File Handling.
 * Documentation and comments can be added for smoother customization.
 * Efficiency of the program can be increased.
 * Program can be diveded into several modules for easier editing and released as a complete package.
