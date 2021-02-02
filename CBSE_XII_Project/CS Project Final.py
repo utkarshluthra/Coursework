@@ -7,7 +7,7 @@ conn=db.connect(host = host, user=User, passwd=password)
 cursor=conn.cursor()
 cursor.execute("create database if not exists classXIIproject")
 cursor.execute("use classXIIproject")
-cursor.execute("create table if not exists flashcards(Front varchar(50), Back varchar(50), Cardid int(3))")
+cursor.execute("create table if not exists flashcards(Front varchar(50), Back varchar(50), Cardid int(3) primary key)")
 cursor.execute("create table if not exists result(SNo int(3), Percent int(3), maxmarks int(3), minmarks int(3), result varchar(10))")
 
 def deck():
@@ -74,13 +74,7 @@ def tuptolst(tup):
                 lst.append(r)
                 return lst
 def test():
-    cursor.execute("CREATE DATABASE IF NOT EXISTS classXIIproject;")
-    cursor.execute("USE classXIIproject;")
-    cursor.execute("create table if not exists result(SNo int(3), Percent int(3), maxmarks int(3), minmarks int(3), result varchar(10))")
-    cursor.execute("create table if not exists flashcards(Front varchar(50), Back varchar(50), Cardid int(10) primary key)")
 
-    
-            
     print('''Welcome to the Flashcard test.\n
     Here, you can test yourself on any of the words given in the dictionary''')
 
