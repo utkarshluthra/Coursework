@@ -5,8 +5,10 @@
 
 **Subject:** Computer Science <br>
 **Language:** Python <br>
-**Name of project:** Single Deck Flashcard Program
+**Name of project:** Single Deck Flashcard Program <br>
 **AIM:** To create a program simulating the flashcard experience for better memorization and reference purpose capable of testing, searching and creating flashcards with complete connectivity to MySQL Database and including File Handling.
+
+___
 
 ### Objectives
 To create an application in Python3 Programming Language which uses the following:
