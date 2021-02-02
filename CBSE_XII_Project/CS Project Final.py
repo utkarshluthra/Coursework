@@ -131,42 +131,43 @@ def test():
                     print("The correct answer is ",x, "\n")
                 
                 i+=1
-            ch=input("Do you want to continue(y/n)")#Exiting loop 1
-        print(count)
-
-        #To assign S_no field in database
-        #Fetching previous maximum value of S_no
-        
-        cursor.execute("select MAX(SNo) from result")
-        g=cursor.fetchall()
-        for row in g:
-            z=(row)
             
-            lst2=tuptolst(z)
-            if lst2[0]==None:
-                cursor.execute("insert into result values(0, 0, 0, 0, '')")
-                lst2[0]=0
-        sno= int(lst2[0])+1
+            print("You have recieved ", count, " points. \n")
 
-        #For percentage field in database
-        percentage=0
-        if count<0:
+            #To assign S_no field in database
+            #Fetching previous maximum value of S_no
+
+            cursor.execute("select MAX(SNo) from result")
+            g=cursor.fetchall()
+            for row in g:
+                z=(row)
+
+                lst2=tuptolst(z)
+                if lst2[0]==None:
+                    cursor.execute("insert into result values(0, 0, 0, 0, '')")
+                    lst2[0]=0
+            sno= int(lst2[0])+1
+
+            #For percentage field in database
             percentage=0
-        else:
-            percentage=(count/num)*100
+            if count<0:
+                percentage=0
+            else:
+                percentage=(count/num)*100
 
-        MM=num
-        MO=count
-        #For Pass/Fail
-        if percentage>33:
-            result="pass"
-            print("Congratulations!!! You have scored", percentage,"% in the test. YOU HAVE PASSED")
-        else:
-            result="fail"
-            print("Sorry... but you have failed in the test. Try again...")
-        #To add to database
-        cursor.execute("INSERT INTO result values ({},{},{},{},'{}')".format(sno, percentage, MM, MO, result))
-        conn.commit()
+            MM=num
+            MO=count
+            #For Pass/Fail
+            if percentage>33:
+                result="pass"
+                print("Congratulations!!! You have scored", percentage,"% in the test. YOU HAVE PASSED")
+            else:
+                result="fail"
+                print("Sorry... but you have failed in the test. Try again...")
+            #To add to database
+            cursor.execute("INSERT INTO result values ({},{},{},{},'{}')".format(sno, percentage, MM, MO, result))
+            conn.commit()
+            ch=input("Do you want to continue(y/n)")#Exiting loop 1
     except TypeError:
         print("No Flashcards Created. First create flashcards using the Main Menu")
 
