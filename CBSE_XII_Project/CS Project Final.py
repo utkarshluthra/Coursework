@@ -97,9 +97,9 @@ def test():
     lst1=tuptolst(h)
     upperlimit=lst1[0]
     try:
-        count=0
         ch='y'
         while ch=='y':#1
+            count=0
             num=int(input("Enter the number of questions to ask: "))
             for i in range(0, num):#3
                 rand=random.randint(1, upperlimit)
