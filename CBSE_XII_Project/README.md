@@ -70,4 +70,4 @@ The database used here is MySQL and is connected to the program using the mysql-
 * Importing and Exporting features of Flashcards via File Handling.
 * Documentation and comments can be added for smoother customization.
 * Efficiency of the program can be increased.
-* Program can be diveded into several modules for easier editing and released as a complete package.
+* Program can be divided into several modules for easier editing and released as a complete package.
