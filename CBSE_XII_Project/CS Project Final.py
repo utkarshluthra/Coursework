@@ -1,9 +1,9 @@
 import mysql.connector as db
 import random
 host=input("Enter the name of the host of your MySQL. (use 'localhost' if not sure): ")
-User=input("Enter the name of the user of MySQL. (use 'root' if not sure): ")
+userName=input("Enter the name of the user of MySQL. (use 'root' if not sure): ")
 password=input("Enter your MySQL Password: ")
-conn=db.connect(host = host, user=User, passwd=password)
+conn=db.connect(host = host, user=userName, passwd=password)
 cursor=conn.cursor()
 cursor.execute("create database if not exists classXIIproject")
 cursor.execute("use classXIIproject")
