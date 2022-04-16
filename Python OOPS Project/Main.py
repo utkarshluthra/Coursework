@@ -1,5 +1,4 @@
-import Admin
-import Course
+import Admin, User, Course
 
 def show_menu():
     pass
